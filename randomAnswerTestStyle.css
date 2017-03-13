@@ -1,0 +1,24 @@
+/*This is a CSS comment here // doesn't work for comments*/
+body{
+  background-color: white ;
+  color: black;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.question {
+  background-color: #f4f285;
+  width: 40rem;
+  height: 3rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.answer {
+  background-color: #85d6f4;
+  width: 40rem;
+  height: 3rem;
+  text-align: center;
+  margin: 1rem;
+}
