@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Assignment 7</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+    <title>Banal Strävan</title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
     <meta charset="utf-8">
 
-  </head>
-  <body>
-    <meter id="meter"></meter>
-    <section id="question">När dog Winston Churchill?</section>
-    <section id="answers1"><button id="a">1955</button>
-                           <button id="b">1928</button>
-    </section>
-    <section id="answers2"><button id="c">1965</button>
-                           <button id="d">1973</button>
-    </section>
-    <button id="back">Back to menu</button>
-    <section id="timer">10</section>
-<section id="score">Score: 196pts</section>
-<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyANWmLkRosmQ5ZcGD6mJ0ucKDtse2-H4vw",
-    authDomain: "banalstravan-3b02a.firebaseapp.com",
-    databaseURL: "https://banalstravan-3b02a.firebaseio.com",
-    storageBucket: "banalstravan-3b02a.appspot.com",
-    messagingSenderId: "181563799665"
-  };
-  firebase.initializeApp(config);
-</script>
-<script type="text/javascript" src="script.js"></script>
+</head>
 
-  </body>
+<body>
+
+  <h1 id="highscoreTitle">Leaderboard</h1>
+  <section id="highscoreDisplay"> </section>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyANWmLkRosmQ5ZcGD6mJ0ucKDtse2-H4vw",
+            authDomain: "banalstravan-3b02a.firebaseapp.com",
+            databaseURL: "https://banalstravan-3b02a.firebaseio.com",
+            storageBucket: "banalstravan-3b02a.appspot.com",
+            messagingSenderId: "181563799665"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="leaderboardTest.js"></script>
+
+</body>
+
 </html>
