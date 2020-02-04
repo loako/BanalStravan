@@ -1,0 +1,242 @@
+body {
+    font-family: "baloo", cursive;
+    background-color: #02C7FF;
+    color: white;
+}
+svg{
+  stroke:white;
+  stroke-width:0.1rem;
+  width:100%;
+  margin-left: 35%;
+}
+.highscoreDisplay {
+    font-family: 'Baloo', cursive;
+    width: 50%;
+    margin-left: 5%;
+}
+
+.logo {
+    width: 80%;
+    min-width: 70%;
+    margin-left: 10%;
+}
+
+.title {
+    margin-top: -1rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1rem;
+    font-family: 'Baloo', cursive;
+}
+
+.topthree {
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.toplist {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin-left: 25%;
+    margin-top: 1rem;
+    overflow: auto;
+}
+
+.podium {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.firstPlace {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.secondThird {
+    display: flex;
+}
+
+.secondThirdText {
+    width: 50%;
+    text-align: center;
+}
+
+.podiumText {
+    font-size: 2rem;
+    display: table;
+    margin: auto;
+    padding-left: 0.1rem;
+}
+
+.remainingToplistContainer {
+    display: flex;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.toplistLeft {
+    height:10rem;
+    width: 50%;
+    margin-left: -1.5rem;
+    padding-left: 1.5rem;
+}
+
+.toplistRight {
+    width: 50%;
+    margin-left: 5.9rem;
+    padding-left: 1.5rem;
+}
+.slideShow{
+  position:fixed;
+  top:55%;
+  z-index:3;
+  right:2%;
+  width:600px;
+
+}
+.join{
+  position: fixed;
+  top:20%;
+  right:5%;
+  font-size:1.5rem;
+}
+.link{
+  font-size: 3rem;
+  color:#D12C8D;
+}
+
+@media all and (max-width: 70rem) {
+
+  .logo {
+      width: 90%;
+      margin-left: 5%;
+  }
+  .toplist {
+      font-size: 1.5rem;
+      margin-left: 5%;
+      margin-top: 1rem;
+  }
+  .remainingToplistContainer {
+      display: block;
+      width: 100%;
+  }
+  .highscoreDisplay {
+      font-family: 'Baloo', cursive;
+      width: 100%;
+      margin-left: 0%;
+  }
+  .firstPlace {
+      text-align: center;
+      font-size: 3rem;
+  }
+  .secondThird {
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+
+  .secondThirdText {
+    width: 100%;
+  }
+
+  .toplistLeft {
+      width: 50%;
+      margin-left: 1rem;
+      margin-bottom: 0;
+      padding-top: 1rem;
+      padding-left: 1.5rem;
+  }
+
+  .toplistRight {
+      width: 50%;
+      margin-left: 1rem;
+      margin-top: 0;
+      padding-left: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+
+  .remainingToplistContainer {
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin-top: 0rem;
+      margin-left: 25%;
+      font-size: 1.5rem;
+      line-height: 0.8rem;
+  }
+
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .podium{
+      margin-left: 10%;
+    }
+    .logo {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .title{
+      margin-left: 17%;
+
+    }
+    .toplist {
+        font-size: 1.5rem;
+        line-height: 1rem;
+        margin-left: 5%;
+        margin-top: 1rem;
+    }
+    .remainingToplistContainer {
+        display: block;
+        width: 100%;
+    }
+    .highscoreDisplay {
+        font-family: 'Baloo', cursive;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .firstPlace {
+        text-align: center;
+        font-size: 3rem;
+    }
+    .secondThird {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .secondThirdText {
+      width: 100%;
+    }
+
+    .toplistLeft {
+        font-size: 1.5rem !important;
+        width: 80%;
+        margin-left: 1rem;
+        margin-bottom: 0;
+        padding-left: 1.5rem;
+    }
+
+    .toplistRight {
+      font-size: 1.5rem !important;
+
+        width: 80%;
+        margin-left: 1rem;
+        margin-top: 0;
+        padding-left: 1.5rem;
+    }
+
+    .remainingToplistContainer {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-top: 0rem;
+        margin-left: 25%;
+        font-size: 1.5rem;
+        line-height: 0.8rem;
+    }

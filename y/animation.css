@@ -1,0 +1,139 @@
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+@keyframes color {
+
+  1.5% { background-color: #6AD; }
+	3%, 12.5% { background-color: #F80; }
+	14% { background-color: #4B6; }
+	15.5%, 25% { background-color: #F68; }
+	26.5% { background-color: #C73; }
+	28%, 37.5% { background-color: #96C; }
+	39% { background-color: #C83; }
+	40.5%, 50% { background-color: #E44; }
+	51.5% { background-color: #F80; }
+	53%, 62.5% { background-color: #4B6; }
+	64% { background-color: #F68; }
+	65.5%, 75% { background-color: #C83; }
+	76.5% { background-color: #96C; }
+	78%, 87.5% { background-color: #6AD; }
+	89% { background-color: #F80; }
+	90.5%, 100%, 0% { background-color: #4B6; }
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes circle {
+    0% {
+        background-color: #f41a1a;
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.2);
+    }
+    20% {
+        transform: scale(1.35);
+    }
+    30% {
+        background-color: #f4301a;
+        transform: scale(1.45);
+    }
+    40% {
+      transform: scale(1.6);
+    }
+    50% {
+        transform: scale(1.8);
+    }
+    60% {
+        transform: scale(2.0);
+    }
+    70% {
+        background-color: #fcfb32;
+        transform: scale(2.2);
+    }
+    80% {
+        transform: scale(2.4);
+    }
+    90% {
+        transform: scale(2.6);
+    }
+    100% {
+        transform: scale(2.8);
+    }
+}
+
+
+
+@keyframes dot-3-move {
+  20% {transform: scale(1)}
+  45% {transform: translateY(-18px) scale(.45)}
+  60% {transform: translateY(-40px) scale(.45)}
+  80% {transform: translateY(-40px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes dot-2-move {
+  20% {transform: scale(1)}
+  45% {transform: translate(-16px, 12px) scale(.45)}
+  60% {transform: translate(-40px, 40px) scale(.45)}
+  80% {transform: translate(-40px, 40px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes dot-1-move {
+  20% {transform: scale(1)}
+  45% {transform: translate(16px, 12px) scale(.45)}
+  60% {transform: translate(40px, 40px) scale(.45)}
+  80% {transform: translate(40px, 40px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes rotate-move {
+  55% {transform: rotate(0deg)}
+  80% {transform: rotate(360deg)}
+  100% {transform: rotate(360deg)}
+}

@@ -1,320 +1,778 @@
-@-webkit-keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+body {
+    font-family: "baloo", cursive;
+    background-color: #02C7FF;
+    color: white;
 }
 
-@keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes rubberBand {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1, 0.7, 1);
-  }
-
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1, 0.7, 1);
-  }
-
-  65% {
-    -webkit-transform: scale3d(.95, 1.05, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  75% {
-    -webkit-transform: scale3d(1.05, .95, 1);
-    transform: scale3d(1, 0.7, 1);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.rubberBand {
-  -webkit-animation-name: rubberBand;
-  animation-name: rubberBand;
-}
-
-body{
-  font-family: "baloo", cursive;
-  background-color: #00E1AF;
-}
-#question{
-  text-align: center;
- color: white;
-  font-size: 4rem;
-  margin-top:5rem;
-  text-shadow:0px 1px 0px #810e05;
-}
-#answers1{
-  display:flex;
-  flex-flow: wrap;
-  justify-content: center;
-
-}
-#back{
-  font-family: 'Baloo', cursive;
-  font-size: 2rem;
-  -moz-box-shadow: 3px 4px 0px 0px #1C1520;
-  	-webkit-box-shadow: 3px 4px 0px 0px #1C1520;
-  	box-shadow: 3px 4px 0px 0px #1C1520;
-  	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #302B33), color-stop(1, #f24437));
-  	background:-moz-linear-gradient(top, #302B33 5%, #5C049C 100%);
-  	background:-webkit-linear-gradient(top, #302B33 5%, #5C049C 100%);
-  	background:-o-linear-gradient(top, #302B33 5%, #5C049C 100%);
-  	background:-ms-linear-gradient(top, #302B33 5%, #5C049C 100%);
-  	background:linear-gradient(to bottom, #302B33 5%, #5C049C 100%);
-  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
-  	background-color:#c62d1f;
-  	-moz-border-radius:18px;
-  	-webkit-border-radius:18px;
-  	border-radius:18px;
-  	border:1px solid #d02718;
-  	display:inline-block;
-  	cursor:pointer;
-  	color:#ffffff;
-  	padding:7px 25px;
-  	text-decoration:none;
-  	text-shadow:0px 1px 0px #810e05;
-
-}
-#answers2{
-  display:flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
-.answerButton{
-  font-size:4rem;
-  margin:2rem;
-  padding:3rem;
-  width: 20rem;
-  border:solid;
-  border-width: 0.3rem;
-  cursor:pointer;
-
-}
-#timer{
-  font-size: 1.8rem;
-  width: 3.3rem;
-  height:3.3rem;
-  position:fixed;
-  display:block;
-  top:10%;
-  right:2%;
-  padding:2.8rem;
-  color:white;
-  text-shadow:0px 1px 0px #810e05;
-
-}
-#score{
-  display:flex;
-  flex-wrap wrap;
-  font-size: 1.5rem;
-
-  width: 3.3rem;
-  height:3.3rem;
-  position:fixed;
-  top:80%;
-  right:10%;
-
-  color:white;
-  text-shadow:0px 1px 0px #810e05;
-
-}
-meter::-webkit-meter-optimum-value {
-    background: green;
-}
-
-meter::-webkit-meter-suboptimum-value {
-    background: orange;
-}
-
-meter::-webkit-meter-even-less-good-value {
-    background: red;
-}
-
-meter {
+#logInSec {
     width: 100%;
+    height: 100%;
+}
+
+img {
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+#bioContent {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.nickContent {
+    display: flex;
+    justify-content: center;
+}
+
+.nickAndBio {
+    margin-left: 30%;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 40%;
+    word-wrap: break-word;
+}
+
+#displayUser {}
+
+.imageContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:41%;
+    margin-top:2%;
+}
+
+#home {
+    list-style: none;
+    text-align: center;
+    display: none;
+    margin-left: 40%;
+    margin-top: 17%;
+    /*margin-right:4rem;*/
+}
+
+#home2 {
+    list-style: none;
+    text-align: center;
+    display: none;
+    margin-left: -50%;
+    margin-top: -30%;
+    /*margin-right:4rem;*/
+}
+
+#home2 li {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+#question {
+    background-color: inherit;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+#answerbox1 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+#flash {
+    animation: flash 15s infinite;
+}
+
+#answerbox2 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+#answerbox3 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.correctGreen {
+    background-color: #1ff08c;
+    color: inherit;
+}
+
+.wrongRed {
+    background-color: #e96161;
+    color: inherit;
+}
+
+.answerButton {
+    font-family: inherit;
+    font-size: 2.5rem;
+    margin: 2rem;
+    width: 20rem;
+    border: solid;
+    border-width: 0.1rem;
+    cursor: pointer;
+    border-radius: 40%;
+    padding: 1rem;
+    background-color: inherit;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    outline: none;
+    text-align: center;
+}
+
+#score {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    width: 3.3rem;
+    height: 3.3rem;
     position: fixed;
+    top: 60%;
+    right: 10%;
+    background-color: inherit;
+    color: white;
+}
+
+.loader {
+    position: fixed;
+    top: 30%;
+    right: 10%;
+}
+
+#timed {
+    background-color: inherit;
+    font-size: 2rem;
+    color: white;
+    z-index: 10;
+    position: fixed;
+    top: 40%;
+    right: 10%;
+}
+
+#loader {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
 }
 
 
+#loadSpin{
+  position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #F86363;
+      display: block;
+      z-index: 6;
+}
 
-#a{
+.container {
+    display: none;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    filter: url('#goo');
+    animation: rotate-move 4s ease-in-out infinite;
+}
 
-font-family: 'Baloo', cursive;
-font-size: 4rem;
--moz-box-shadow: 3px 4px 0px 0px #47002E;
-	-webkit-box-shadow: 3px 4px 0px 0px #47002E;
-	box-shadow: 3px 4px 0px 0px #47002E;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #C41988), color-stop(1, #f24437));
-	background:-moz-linear-gradient(top, #C41988 5%, #E15BB2 100%);
-	background:-webkit-linear-gradient(top, #C41988 5%, #E15BB2 100%);
-	background:-o-linear-gradient(top, #C41988 5%, #E15BB2 100%);
-	background:-ms-linear-gradient(top, #C41988 5%, #E15BB2 100%);
-	background:linear-gradient(to bottom, #C41988 5%, #E15BB2 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
-	background-color:#c62d1f;
-	-moz-border-radius:18px;
-	-webkit-border-radius:18px;
-	border-radius:18px;
-	border:1px solid #d02718;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	padding:7px 25px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #810e05;
+.dot {
+    width: 70px;
+    height: 70px;
+    border-radius: 80%;
+    color: inherit;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
+.dot-3 {
+    color: inherit;
+    background-color: #f24437;
+    animation: dot-3-move 2s ease infinite;
+}
+
+.dot-2 {
+    color: inherit;
+    background-color: #c62d1f;
+    animation: dot-2-move 2s ease infinite;
+}
+
+.dot-1 {
+    color: inherit;
+    background-color: white;
+    animation: dot-1-move 2s ease infinite;
+}
+
+.loading {
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 60px;
+    font-size: 52px;
+    position: absolute;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: -175px;
+    text-shadow: #808080 1px 1px 1px;
+    font-family: inherit;
+}
+
+.letter {
+    float: left;
+    width: 35px;
+    height: 60px;
+    position: relative;
+    animation: flip 2s infinite;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.letter div {
+    background-color: inherit;
+    color: #4B6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(0);
+    backface-visibility: hidden;
+    animation: color 16s infinite;
+}
+
+.letter div.back {
+    transform: rotateY(180deg);
+}
+
+.letter:nth-child(1), .letter:nth-child(1) div {
+    animation-delay: 0.125s;
+}
+
+.letter:nth-child(2), .letter:nth-child(2) div {
+    animation-delay: 0.25s;
+}
+
+.letter:nth-child(3), .letter:nth-child(3) div {
+    animation-delay: 0.375s;
+}
+
+.letter:nth-child(4), .letter:nth-child(4) div {
+    animation-delay: 0.5s;
+}
+
+.letter:nth-child(5), .letter:nth-child(5) div {
+    animation-delay: 0.625s;
+}
+
+.letter:nth-child(6), .letter:nth-child(6) div {
+    animation-delay: 0.75s;
+}
+
+.letter:nth-child(7), .letter:nth-child(7) div {
+    animation-delay: 0.875s;
+}
+
+.letter:nth-child(8), .letter:nth-child(8) div {
+    animation-delay: 1s;
+}
+
+.letter:nth-child(9), .letter:nth-child(9) div {
+    animation-delay: 1.125s;
+}
+
+.letter:nth-child(10), .letter:nth-child(10) div {
+    animation-delay: 1.25s;
+}
+
+#circle {
+    animation: circle 10s ease-out;
+    animation-direction: reverse;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    z-index: -1;
+    background-color: #008C00;
+    color: inherit;
+    position: fixed;
+    top: 39.5%;
+    right: 9.4%;
+}
+
+#all {
+    display: none;
+}
+
+#loginButton {
+    margin-left: 42%;
+    margin-top: 6%;
+    font-family: inherit;
+    font-size: 4rem;
+    border-radius: 40%;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #FFD360;
+    border-color: white;
+    color: white;
+    border: solid;
+    outline: none;
+    /*text-shadow:0px 4px 0px #810e05;
+  box-shadow: 3px 4px 1px 1px #6C4F00;*/
+}
+
+#loginButton:hover {
+    animation: color 1s ease-out infinite;
+    animation-fill-mode: both;
+}
+
+#logoutButton {
+    font-family: inherit;
+    font-size: 4rem;
+    border-radius: 40%;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #FFB267;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    outline: none;
+}
+
+#logoutButton:hover {
+    animation: pulse 1s infinite;
+}
+
+#logo {
+    text-align: center;
+    margin-top: 4%;
+    font-family: inherit;
+    font-size: 6rem;
+    color: white;
+    background-color: inherit;
+}
+
+#profilePage {
+    display: none;
+    margin-top: 0%;
+}
+
+#playButton {
+    font-family: inherit;
+    font-size: 6rem;
+    border-radius: 40%;
+    padding: 5rem;
+    cursor: pointer;
+    background-color: #F3758B;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    outline: none;
+}
+
+#scoreButton {
+    font-family: inherit;
+    font-size: 4rem;
+    border-radius: 40%;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #B600A7;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    outline: none;
+}
+
+#profileButton {
+    font-family: inherit;
+    font-size: 4rem;
+    border-radius: 40%;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #1500C4;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    outline: none;
+}
+
+#profileButton:hover {
+    animation: pulse 1s infinite;
+}
+
+#scoreButton:hover {
+    animation: pulse 1s infinite;
+}
+
+#playButton:hover {
+    animation: pulse 1s infinite;
+}
+
+#blocker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: inherit;
+    color: black;
+    display: none;
+    width: 100%;
+    height: 100vw;
+    z-index: 3;
+}
+
+#userImage {
+    width: 7rem;
+    height: 7rem;
+}
+
+#imgBox {
+    display: flex;
+    margin-left: 10%;
+}
+
+#deleteAccountButton {
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    background-color: #7890D6;
+    color: white;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: white;
+    margin:0.5rem;
+}
+
+#backButton {
+    font-family: inherit;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0.1rem;
+    cursor: pointer;
+    background-color: #7890D6;
+    color: white;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: white;
+    margin-left:-7%;
+}
+
+.goBack {
+    display: flex;
+    justify-content: center;
+}
+
+.menuButtons {
+    font-size: 5vw !important;
+}
+
+#deleteAccountInput {
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#sendNickName {
+    font-family: inherit;
+    font-size: 1.5rem;
+    border-radius: 30%;
+    cursor: pointer;
+    background-color: #7890D6;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.1rem;
+    margin:0.5rem;
+}
+
+#sendBio {
+    font-family: inherit;
+    font-size: 1.5rem;
+    border-radius: 30%;
+    cursor: pointer;
+    background-color: #7890D6;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: white;
+    margin:0.5rem;
+}
+
+#nickNameInput {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#bioInput {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#nickBioContent {
+    font-size: 2rem;
+    margin-top:1%;
+}
+svg{
+  stroke:white;
+  stroke-width:0.1rem;
+}
+#Layer_2{
+  opacity: 1;
+}
+#deleteFeedback {
+    background-color: inherit;
+    color: #F8EF8D;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#back {
+    width: 90%;
+    top: 75%;
+    z-index: 8;
+    font-family: inherit;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    background-color: #7890D6;
+    color: white;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: white;
+    font-size: 2rem;
+    margin: 2rem;
+    width: 20rem;
+    border: solid;
+    border-width: 0.1rem;
+    outline: none;
+    text-align: center;
+}
+
+.deleteContent {
+    justify-content: center;
+    display: flex;
 
 }
-#b{
-  font-family: 'Baloo', cursive;
-  font-size: 4rem;
-  -moz-box-shadow: 3px 4px 0px 0px #342A00;
-  	-webkit-box-shadow: 3px 4px 0px 0px #342A00;
-  	box-shadow: 3px 4px 0px 0px #342A00;
-  	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FFF500), color-stop(1, #f24437));
-  	background:-moz-linear-gradient(top, #FFF500 5%, #FFD100 100%);
-  	background:-webkit-linear-gradient(top, #FFF500 5%, #FFD100 100%);
-  	background:-o-linear-gradient(top, #FFF500 5%, #FFD100 100%);
-  	background:-ms-linear-gradient(top, #FFF500 5%, #FFD100 100%);
-  	background:linear-gradient(to bottom, #FFF500 5%, #FFD100 100%);
-  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
-  	background-color:#c62d1f;
-  	-moz-border-radius:18px;
-  	-webkit-border-radius:18px;
-  	border-radius:18px;
-  	border:1px solid #d02718;
-  	display:inline-block;
-  	cursor:pointer;
-  	color:#ffffff;
-  	padding:7px 25px;
-  	text-decoration:none;
-  	text-shadow:0px 1px 0px #810e05;
 
-}
-#c{
-  font-family: 'Baloo', cursive;
-  font-size: 4rem;
-  -moz-box-shadow: 3px 4px 0px 0px #492400;
-  	-webkit-box-shadow: 3px 4px 0px 0px #492400;
-  	box-shadow: 3px 4px 0px 0px #492400;
-  	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #DD6C00), color-stop(1, #f24437));
-  	background:-moz-linear-gradient(top, #FFA200 5%, #FF7C00 100%);
-  	background:-webkit-linear-gradient(top, #FFA200 5%, #FF7C00 100%);
-  	background:-o-linear-gradient(top, #FFA200 5%, #FF7C00 100%);
-  	background:-ms-linear-gradient(top, #FFA200 5%, #FF7C00 100%);
-  	background:linear-gradient(to bottom, #FFA200 5%, #FF7C00 100%);
-  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
-  	background-color:#c62d1f;
-  	-moz-border-radius:18px;
-  	-webkit-border-radius:18px;
-  	border-radius:18px;
-  	border:1px solid #d02718;
-  	display:inline-block;
-  	cursor:pointer;
-  	color:#ffffff;
-  	padding:7px 25px;
-  	text-decoration:none;
-  	text-shadow:0px 1px 0px #810e05;
 
-}
-#d{
-  font-family: 'Baloo', cursive;
-  font-size: 4rem;
-  -moz-box-shadow: 3px 4px 0px 0px #040033;
-  	-webkit-box-shadow: 3px 4px 0px 0px #040033;
-  	box-shadow: 3px 4px 0px 0px #040033;
-  	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #305281), color-stop(1, #f24437));
-  	background:-moz-linear-gradient(top, #305281 5%, #2C8EFC 100%);
-  	background:-webkit-linear-gradient(top, #305281 5%, #2C8EFC 100%);
-  	background:-o-linear-gradient(top, #305281 5%, #2C8EFC 100%);
-  	background:-ms-linear-gradient(top, #305281 5%, #2C8EFC 100%);
-  	background:linear-gradient(to bottom, #305281 5%, #2C8EFC 100%);
-  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
-  	background-color:#c62d1f;
-  	-moz-border-radius:18px;
-  	-webkit-border-radius:18px;
-  	border-radius:18px;
-  	border:1px solid #d02718;
-  	display:inline-block;
-  	cursor:pointer;
-  	color:#ffffff;
-  	padding:7px 25px;
-  	text-decoration:none;
+/*############################################################################*/
 
-}
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-    #answers1{
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    #answers1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #answers2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #back {
+        position: fixed;
+        width: 4rem;
+        top: 80%;
+        left: 0;
+        z-index: 8;
+        font-family: inherit;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        background-color: #7890D6;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        font-size: 0.9rem;
+        border-width: 0.1rem;
+        outline: none;
+        text-align: center;
+    }
+    #time {
+        position: fixed;
+        top: 55%;
+        left: 5%;
+    }
+    #score {
+        text-align: center;
+        position: fixed;
+        left: 40%;
+        top: 81%;
+        font-size: 1.2rem;
+    }
+    #backButton{
+      font-size: 1rem;
+      }    #home {
+        list-style: none;
+        text-align: center;
+        display: none;
+        margin-left: -8%;
+        margin-top: 5%;
+    }
+    #home2 {
+        list-style: none;
+        text-align: center;
+        display: none;
+        margin-left: -20%;
+        margin-top: 10%;
+    }
+    #nickBioContent {
+        font-size: 1rem;
+    }
+    #displayNickname {
+        font-size: 1rem;
+    }
+    #displayBio {
+        font-size: 1rem;
+    }
+    #deleteFeedback {
+        font-size: 1rem;
+    }
+    .deleteContent{
       display:flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      margin-top:-20%;
 
     }
-    #answers2{
-      display:flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    #sendBio {
+        width: 20%;
     }
-    answerButton{
-      width:35%;
+    #sendNickName {
+        width: 20%;
     }
-    #back{
-      width:90%;
-      position:fixed;
-      top:75%;
+    #profilePage {
+        margin-top: 10%;
     }
-    #time{
-      position:fixed;
-      top:55%;
-      left:5%;
+    #loginButton {
+        margin-left: 20%;
+        width: 60%;
+        margin-top: 30%;
     }
-    #score{
-      position:fixed;
-      top:58%;
+    svg {
+        width: 90%;
+        height: 3rem;
+        margin-top: 25%;
+    }
+    #question {
+        font-size: 1.2rem;
+    }
+    .answerButton {
+        font-size: 1rem;
+        margin: 0.5rem;
+        width: 40%;
+    }
+    #playButton {
+        margin-right: 2%;
+        width: 40%;
+        font-family: inherit;
+        font-size: 2rem;
+        border-radius: 40%;
+        padding: 3rem;
+        cursor: pointer;
+        background-color: #F3758B;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        outline: none;
+    }
+    #scoreButton {
+        width: 50%;
+        font-family: inherit;
+        font-size: 1rem;
+        border-radius: 40%;
+        padding: 1rem;
+        cursor: pointer;
+        background-color: #B600A7;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        outline: none;
+    }
+    #profileButton {
+        width: 50%;
+        font-family: inherit;
+        font-size: 1rem;
+        border-radius: 40%;
+        padding: 1rem;
+        cursor: pointer;
+        background-color: #1500C4;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        outline: none;
+    }
+    #logoutButton {
+        width: 50%;
+        font-family: inherit;
+        font-size: 1rem;
+        border-radius: 40%;
+        padding: 1rem;
+        cursor: pointer;
+        background-color: #FFB267;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        outline: none;
+    }
+    #circle {
+        opacity: 0;
+        animation: none;
+        position: fixed;
+        top: 85%;
+        right: 9.4%;
+    }
+    #timed {
+        position: fixed;
+        top: 85%;
+        right: 10.8%;
+    }
+    section>div>img {
+        width: 100%;
+    }
+    .nickAndBio {
+        display: flex;
+        text-align: left;
+        flex-wrap: wrap;
+        max-width: 50%;
+        word-wrap: break-word;
+        margin-left: 4%;
+        margin-top:0.5%;
+        height:10rem;
+    }
+    .menuButtons{
+      margin-left: 10%
+    }
+    .points{
+      color:green;
+    }
+    #imageContainer{
+      margin-left:-70%;
     }
 }
