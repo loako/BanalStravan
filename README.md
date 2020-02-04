@@ -9,8 +9,7 @@ Skapat våren 2017
 Finns live på https://banalstravan-3b02a.firebaseapp.com/
 
 
-
-Eng
+__________________________________________
 
 Final task from the course Programming II
 
