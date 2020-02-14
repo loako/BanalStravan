@@ -1,5 +1,5 @@
 # BanalStravan
-Slutuppgift från Programmering II
+Slutuppgift från _Programmering II_
 
 Ett stressande frågesportspel med leaderboard.
 Använder firebase för att skapa användarprofiler och spara poäng i leaderboarden.
@@ -11,7 +11,7 @@ Finns live på https://banalstravan-3b02a.firebaseapp.com/
 
 __________________________________________
 
-Final task from the course Programming II
+Final task from the course _Programming II_
 
 A stressful quiz game with a leaderboard.
 Uses firebase to create user-profiles and save scores in the leaderboard
